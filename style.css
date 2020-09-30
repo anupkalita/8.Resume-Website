@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    margin-right: 0.5rem;
+}
+
+.btn:hover{
+    background-color: #F2F2F2;
+}
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    color: #fff;
+    display: none;
+}
+
+/* Showcase Section */
+.showcase{
+    background: linear-gradient(-45deg, rgba(79, 85, 201, .9), rgba(129, 138, 255, .9)), url(./img/pexels-bongkarn-thanyakij-3740253.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 2rem;
+    /* background-attachment: fixed; */
+}
+
+.showcase .nav-bar{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.showcase .nav-bar ul{
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.showcase .nav-bar ul a{
+    margin-right: 2rem;
+    padding-bottom: 0.5rem;
+    display:inline-block;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.showcase .nav-bar ul a:hover{
+    text-decoration: underline;
+}
+
+.showcase-content .text{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.showcase-content .text img{
+    width: 6.25rem;
+    border-radius: 50%;
+}
+
+.showcase-content .text h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0.5rem 0;
+}
+
+.showcase-content .text p{
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+}
+
+
+
+/* Profile Section */
+.profile{
+    background: url(./img/pexels-bongkarn-thanyakij-3740217.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profile-card{
+    margin: 5rem 5rem;
+    width: 18.75rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px grey;
+    border-bottom: 10px solid #4F55C9;
+}
+
+.profile-card .bg{
+    height: 6.25rem;
+    background: url(./img/treatment-1327811_1920.jpg) no-repeat center center/cover;
+    border-bottom: 1px solid #748182;
+    position: relative;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.profile-card .bg img{
+    width: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 3.1rem;
+    left: 6.2rem;
+}
+
+.profile-text{
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #748182;
+    text-align: center;
+}
+
+.profile-text p{
+    padding-top: 0.2rem;
+}
+
+.profile-text h1{
+    font-weight: 100;
+}
+
+.profile-text p{
+    color: #748182;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.social-media a:first-child{
+    color: #3b5998; 
+}
+
+.social-media a:nth-child(2){
+    color:#8134AF;
+}
+
+.social-media a:nth-child(3){
+    color: #D44638;
+}
+
+
+
+
+/* Education Section */
+.border{
+    height: 5rem;
+    background: linear-gradient(-45deg, rgba(79, 85, 201, .9), rgba(129, 138, 255, .9));
+    box-shadow: 0px 3px 5px #748182;
+    text-align: center;
+}
+
+.border h1{
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.education{
+    padding: 2rem;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
+    grid-gap: 1rem;
+    background-color: #fff;
+}
+
+.box{
+    background-color: #fff;
+    justify-self: center;
+    box-shadow: 2px 2px 5px #748182;
+    width: 18.75rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.box img{
+    width: 100%;
+}
+
+.box-text{
+    background-color: #F4F5F9;
+    text-align: center;
+}
+
+.box-text h1{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.box-text a{
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: rgb(79, 85, 201);
+    color: white;
+}
+
+
+
+
+/* Training Section */
+.training{
+    background: linear-gradient(-45deg, rgba(79, 85, 201, .9), rgba(129, 138, 255, .9)), url(./img/treatment-1327811_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+.heading{
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.heading h1{
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.training-content{
+    padding: 1rem;
+    padding-bottom: 5rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15.6rem, 1fr));
+    grid-gap: 2rem;
+}
+
+.content{
+    width: 18.75rem;
+    justify-self: center;
+    background-color: #F4F5F9;
+    color: #000;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px #4F55C9;
+}
+
+.content img{
+    width: 100%;
+    height: 9.3rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.content h1{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.content-text p{
+    color: #748182;
+}
+
+
+/* Intership Section */
+.internship{
+    background: url(./img/pexels-bongkarn-thanyakij-3740253.jpg) no-repeat center center/cover;
+    display: flex;
+}
+
+.internship-card img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.internship-card{
+    margin: 5rem 5rem;
+    width: 18.75rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+    border-bottom: 10px solid #4F55C9;
+}
+
+.internship-text{
+    padding: 1rem;
+}
+
+.internship-text h1{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.internship-text p{
+    color: #748182;
+}
+
+
+/* Footer Section */
+footer{
+    padding: 1rem;
+    text-align: center;
+    background: linear-gradient(-45deg, rgba(79, 85, 201, .9), rgba(129, 138, 255, .9));
+}
+
+footer p{
+    color: #fff;
+}
+
+
+
+
+/* ------------------------------------------Media Queries-------------------------------------------- */
+/* -----------------------------------------------540px----------------------------------------------- */
+
+@media(max-width:540px){
+
+    
+    /*Hamburger Menu Button */
+    .menu-btn{
+        display: block;
+    }
+
+    .menu-btn:hover{
+        opacity: 0.7;
+    }
+
+    .showcase .nav-bar ul{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #F2F2F2;
+        width: 50%;
+        height: 100%;
+        border-right: #4F55C9 1px solid;
+        border-bottom: #4F55C9 1px solid;
+        opacity: 0.9;
+        padding: 1rem;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+        z-index: 2;
+    }
+
+    .showcase .nav-bar ul a{
+        color: #4F55C9;
+    }
+
+    .showcase .nav-bar ul li{
+        padding: 1rem;
+        border-bottom: #ccc 1px solid;
+    }
+
+    .nav-bar ul.show{
+        transform: translateX(0px);
+    } 
+}
+
+
+/* --------------------------------------------------------------420px------------------------------------ */
+@media(max-width: 420px){
+
+    /* Showcase Section */
+    .showcase-content .text h1{
+        font-size: 1.3rem;
+    }
+
+    .showcase-content .text p{
+        font-size: 1rem;
+        padding: 0rem 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    /* Profile Section */
+    .profile-card{
+        margin: 5rem 2rem;
+        width: 18.75rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        box-shadow: 2px 2px 5px grey;
+        border-bottom: 10px solid #4F55C9;
+    }
+
+    /* Education Section */
+    .border h1{
+        font-size: 2rem;
+        padding: 1rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .education{
+        grid-template-columns: 1fr;
+    }
+
+    .box{
+        width: 15rem;
+    }
+
+    /* Training Section */
+    .training-content{
+        grid-template-columns: 1fr;
+    }
+    
+    .content{
+        width: 15rem;
+    }
+
+    .heading h1{
+        font-size: 1.5rem;
+    }
+}
