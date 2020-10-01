@@ -350,9 +350,20 @@ footer p{
 
 
 /* ------------------------------------------Media Queries-------------------------------------------- */
+/* ----------------------------------------------1024px----------------------------------------------- */
+@media(max-width:1024px){
+
+    /* Training Section */
+    .training-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
 /* -----------------------------------------------540px----------------------------------------------- */
 
-@media(max-width:540px){
+@media(max-width:680px){
 
     
     /*Hamburger Menu Button */
@@ -393,6 +404,12 @@ footer p{
     .nav-bar ul.show{
         transform: translateX(0px);
     } 
+    
+
+     /* Training Section */
+     .training-content{
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -436,16 +453,22 @@ footer p{
         width: 15rem;
     }
 
+
     /* Training Section */
-    .training-content{
-        grid-template-columns: 1fr;
-    }
-    
     .content{
         width: 15rem;
     }
 
     .heading h1{
         font-size: 1.5rem;
+    }
+
+    /* Intership Section */
+    .internship{
+        justify-content: center;
+    }
+
+    .internship-card{
+        margin: 3rem 2rem;
     }
 }
